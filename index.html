@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+q5<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -22,17 +22,25 @@
 
     <ul id="lista"></ul>
 
-    <h3 id="total">
-        Total: $0.00
-    </h3>
+<h3 id="total">
+    Total: $0.00
+</h3>
 
-    <button onclick="enviarPedido()">
-        Enviar pedido por WhatsApp
-    </button>
+<div id="datosPedido">
 
-</section>
+    <label for="casa">🏠 Casa donde se entrega:</label>
+    <input 
+        type="text" 
+        id="casa" 
+        placeholder="Ejemplo: Casa #15">
 
-<script src="script.js"></script>
+    <label for="especificaciones">📝 Especificaciones del pedido:</label>
+    <textarea 
+        id="especificaciones" 
+        placeholder="Ejemplo: Licuado de fresa con poca azúcar y leche deslactosada"></textarea>
 
-</body>
-</html>
+</div>
+
+<button onclick="enviarPedido()">
+    Enviar pedido por WhatsApp
+</button>
