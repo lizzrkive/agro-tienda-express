@@ -54,6 +54,9 @@ function enviarPedido() {
     return;
   }
 
+  let casa = document.getElementById("casa").value;
+  let especificaciones = document.getElementById("especificaciones").value;
+
   let mensaje = "Hola 😊 Quiero realizar este pedido:%0A%0A";
 
   carrito.forEach(item => {
@@ -62,6 +65,10 @@ function enviarPedido() {
 
   mensaje += "%0ATotal: " +
     document.getElementById("total").innerText.replace("Total: ", "");
+
+  mensaje += "%0A%0A🏠 Casa donde entregar: " + casa;
+
+  mensaje += "%0A📝 Especificaciones: " + especificaciones;
 
   window.open(
     "https://wa.me/50375990035?text=" + mensaje,
