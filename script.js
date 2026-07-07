@@ -2,7 +2,7 @@ const productos = [
   { nombre: "Arroz Blanco (2LB)", precio: 1.45 },
   { nombre: "Arroz Precocido (2LB)", precio: 1.55 },
   { nombre: "Frijol de Seda (2LB)", precio: 2.55 },
-  { nombre: "Cartón de Huevos (30)", precio: 5.50 },
+  { nombre: "Cartón de Huevos (30 unidades)", precio: 5.50 },
   { nombre: "Maní Japonés", precio: 0.30 },
   { nombre: "Maní Dulce", precio: 0.30 },
   { nombre: "Maní Salado", precio: 0.30 },
